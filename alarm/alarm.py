@@ -2,6 +2,10 @@ import datetime
 
 now = datetime.datetime.now()
 import os
+def call(song):
+    os.system("cd music")
+    pl = "start " + song
+    os.system(pl)
 def ta(th,tm, song):
     ls=True
     if(ls):
@@ -9,11 +13,7 @@ def ta(th,tm, song):
         b = now.minute
         if(a==th):
             if(b==tm):
-                
-                os.system("cd music")
-                
-                pl = "start " + song
-                os.system(pl)
+                call(song)
 
                 
 #take time
